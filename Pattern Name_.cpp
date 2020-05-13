@@ -1,0 +1,105 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    clrscr();
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=7;j++)
+            {
+            if(i==1||i==5||j==3||j==7)
+            {
+                printf("\033[1;31m");
+            printf("*");
+            }
+        else
+        {
+            printf(" ");
+        }
+            }
+        printf("\n");
+    }
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=7;j++)
+        {
+            if(i==1||i==5||i==3||j==1)
+            {
+                printf("\033[1;32m");
+            printf("*");
+                }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=7;j++)
+        {
+            if(i==1||i==5||i==3||j==1)
+            {
+                printf("\033[1;33m");
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=7;j++)
+        {
+            if(i==1||i==3||j==1||j==7)
+            {
+                printf("\033[1;36m");
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+        
+    }
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=7;j++)
+        {
+            if(i==1||i==3||j==1||j==7)
+            {
+                printf("\033[1;35m");
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=7;j++)
+        {
+            if(j==1||i==3||i==3-j)
+            {
+                printf("\033[0;34m");
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    getch();
+}

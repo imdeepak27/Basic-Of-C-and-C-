@@ -1,0 +1,72 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    clrscr();
+    int A,INR2000,INR500,INR200,INR100,INR50,INR20,INR10,INR5,INR2,INR1;
+    INR2000=INR500=INR200=INR100=INR50=INR20=INR10=INR5=INR2=INR1=0;
+    printf("\nEnter Amount:");
+    scanf("%d",&A);
+    if(A>=2000)
+    {
+        INR2000=A/2000;
+        A=A-(INR2000*2000);
+    }
+    if(A>=500)
+    {
+        INR500=A/500;
+        A=A-(INR500*500);
+    }
+    if(A>=200)
+    {
+        INR200=A/200;
+        A=A-(INR200*200);
+    }
+    if(A>=100)
+    {
+        INR100=A/100;
+        A=A-(INR100*100);
+    }
+    if(A>=50)
+    {
+        INR50=A/50;
+        A=A-(INR50*50);
+    }
+    if(A>=20)
+    {
+        INR20=A/20;
+        A=A-(INR20*20);
+    }
+    if(A>=10)
+    {
+        INR10=A/10;
+        A=A-(INR10*10);
+    }
+    if(A>=5)
+    {
+        INR5=A/5;
+        A=A-(INR5*5);
+    }
+    if(A>=2)
+    {
+        INR2=A/2;
+        A=A-(INR2*2);
+    }
+    if(A>=1)
+    {
+        INR1=A/1;
+        A=A-(INR1*1);
+    }
+    printf("\nTotal Number Of Notes:");
+    printf("\n2000=%d",INR2000);
+    printf("\n500=%d",INR500);
+    printf("\n200=%d",INR200);
+    printf("\n100=%d",INR100);
+    printf("\n50=%d",INR50);
+    printf("\n20=%d",INR20);
+    printf("\n10=%d",INR10);
+    printf("\n5=%d",INR5);
+    printf("\n2=%d",INR2);
+    printf("\n1=%d",INR1);
+    getch();
+}
